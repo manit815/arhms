@@ -1,0 +1,91 @@
+{
+    "tfs_item": {
+        "items": [
+            {
+                "severity": 1,
+                "created_date": "xxxxxx",
+                "squad": ["Squad1"],
+                "chapter": ["Front end", "Back end", "Test"],
+                "Description": "some description goes here",
+                "Acceptance_criteria": [],
+                "effort": 13,
+                "log_url": [""],
+                "type": "bug",
+                "status": "approved",
+                "blocked": true
+            },{
+                "severity": 2,
+                "created_date": "xxxxxx",
+                "squad": ["Squad1"],
+                "chapter": ["Front end", "Back end", "Test"],
+                "Description": "some description goes here",
+                "Acceptance_criteria": [],
+                "effort": 8,
+                "log_url": [""],
+                "type": "bug",
+                "status": "approved",
+                "blocked": true
+            },{
+                "severity": 3,
+                "created_date": "xxxxxx",
+                "squad": ["Squad1"],
+                "chapter": ["Front end", "Back end", "Test"],
+                "Description": "some description goes here",
+                "Acceptance_criteria": [],
+                "effort": 3,
+                "log_url": [""],
+                "type": "bug",
+                "status": "approved",
+                "blocked": true
+            },{
+                "severity": 1,
+                "created_date": "xxxxxx",
+                "squad": ["Squad1"],
+                "chapter": ["Front end", "Back end", "Test"],
+                "Description": "some description goes here",
+                "Acceptance_criteria": [],
+                "effort": 3,
+                "log_url": [""],
+                "type": "bug",
+                "status": "approved",
+                "blocked": true
+            },{
+                "severity": 1,
+                "created_date": "xxxxxx",
+                "squad": ["Squad1"],
+                "chapter": ["Front end", "Back end", "Test"],
+                "Description": "some description goes here",
+                "Acceptance_criteria": [],
+                "effort": 3,
+                "log_url": [""],
+                "type": "bug",
+                "status": "approved",
+                "blocked": true
+            },{
+                "severity": 1,
+                "created_date": "xxxxxx",
+                "squad": ["Squad1"],
+                "chapter": ["Front end", "Back end", "Test"],
+                "Description": "some description goes here",
+                "Acceptance_criteria": [],
+                "effort": 3,
+                "log_url": [""],
+                "type": "bug",
+                "status": "approved",
+                "blocked": true
+            },{
+                "severity": 1,
+                "created_date": "xxxxxx",
+                "squad": ["Squad1"],
+                "chapter": ["Front end", "Back end", "Test"],
+                "Description": "some description goes here",
+                "Acceptance_criteria": [],
+                "effort": 3,
+                "log_url": [""],
+                "type": "bug",
+                "status": "approved",
+                "blocked": true
+            }
+        ]
+    }
+}

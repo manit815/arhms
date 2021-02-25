@@ -12,21 +12,25 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
-    path: 'engineering',
-    component: EngineeringComponent
-  },
-  {
     path: 'bugs',
-    component: BugsComponent
-  },
-  {
-    path: 'tribes',
-    component: TribesComponent
-  },
-  {
-    path: 'quality',
-    component: QualityComponent
+    loadChildren: () => import('./bugs/bugs.module').then(m => m.BugsModule)
   }
+  // {
+  //   path: 'engineering',
+  //   component: EngineeringComponent
+  // },
+  // {
+  //   path: 'bugs',
+  //   component: BugsComponent
+  // },
+  // {
+  //   path: 'tribes',
+  //   component: TribesComponent
+  // },
+  // {
+  //   path: 'quality',
+  //   component: QualityComponent
+  // }
 ];
 
 @NgModule({
