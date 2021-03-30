@@ -20,4 +20,25 @@ export const chartsOption = {
         position: 'bottom'
     },
 };
+
+export const pieChartsData = {
+    labels: [],
+    datasets: [
+        {
+            data: [3000,1000, 2000],            
+            backgroundColor:  [ "#6544a9", "#51cc00", "#5d4361"]
+        }
+    ]
+}
+
+export const pieChartOPtion = {
+    title: {
+        display: true,
+        text: 'Technology Chart',
+        fontSize: 16
+    },
+    legend: {
+        position: 'bottom'
+    },
+};
      
