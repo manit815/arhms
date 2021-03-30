@@ -16,7 +16,8 @@ export class BugsDashboardComponent implements OnInit {
   public options = chartsOption;
   public severityData: Array<SeverityModel>;
   public rowData: Array<any>;
-  public columnDefs = [{ field: "Severity" }, , { field: "PRBID" }, { field: "Description" }];
+  public columnDefs = [{ field: "Severity" }, { field: "PRBID", cellRenderer:(params)=>`<a href='https://www.google.com' target='_blank'>PRB1X2564</a>`}, { field: "Description" }];
+  public type= "bar";
 
   constructor(private httpService: HttpService, private bugsMapperService: BugsMapperService,
     private bugsGenericService: BugsGenericService) { }
