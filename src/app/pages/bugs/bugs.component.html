@@ -1,1 +1,9 @@
 <p>bugs works!</p>
+<div class="container">
+    <div class="box box1"  (click)="onClick('/bugsdashboard')"><span>Severity</span></div>
+    <div class="box box2" routerLink="/bugstechnology"><span>Team</span></div>
+    <div class="box box3"><span>Technology</span></div>   
+    <div class="box box4"><span>Time elapsed</span></div>
+</div>
+
+<router-outlet></router-outlet>

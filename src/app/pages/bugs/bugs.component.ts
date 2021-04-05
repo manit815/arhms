@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bugs',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BugsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }  
 
   ngOnInit(): void {
   }
+
+  onClick(event) {
+    alert (event)
+    this.router.navigate(['../../bugs/components/bugstechnology']);
+  }
+
 
 }

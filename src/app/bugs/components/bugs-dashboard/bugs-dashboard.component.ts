@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  } from '@angular/core';
+import { BugsRoutingModule } from '../../bugs-routing.module';
 import { chartsData, chartsOption } from 'src/app/commons/constants/charts.constant';
 import { HttpService } from 'src/app/commons/services/http.service';
 import { SeverityModel } from '../../models/classes/severity.models.class';
