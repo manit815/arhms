@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BugsComponent } from "../../app/pages/bugs/bugs.component";
+import { BugsMenuComponent } from './components/bugs-menu/bugs-menu.component';
 import { BugsDashboardComponent } from './components/bugs-dashboard/bugs-dashboard.component';
 import { BugsTechnologyComponent } from './components/bugs-technology/bugs-technology.component';
 
 const routes: Routes = [
   {
     path: "",
-    component: BugsComponent,
-    children: [ {path: 'bugsdashboard', component: BugsDashboardComponent}, 
+    component: BugsMenuComponent,
+    children: [ 
+              {path: '', component: BugsDashboardComponent},
+                {path: 'bugsdashboard', component: BugsDashboardComponent}, 
                 {path: "bugstechnology", component: BugsTechnologyComponent}
               ]
   }
@@ -19,4 +21,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class BugsRoutingModule { };
-export const BugsRoutingComponents = [BugsComponent, BugsDashboardComponent, BugsTechnologyComponent];
+export const BugsRoutingComponents = [BugsMenuComponent, BugsDashboardComponent, BugsTechnologyComponent];
