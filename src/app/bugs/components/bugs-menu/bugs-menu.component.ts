@@ -12,10 +12,5 @@ export class BugsMenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  onClick(event) {
- alert (event)
-    this.router.navigate([event]);
-  }
-
+  
 }
