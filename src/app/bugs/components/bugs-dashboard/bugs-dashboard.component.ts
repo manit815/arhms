@@ -12,7 +12,6 @@ import { BugsMapperService } from '../../services/bugs-mapper.service';
   styleUrls: ['./bugs-dashboard.component.scss']
 })
 export class BugsDashboardComponent implements OnInit {
-
   public data = chartsData;
   public options = chartsOption;
   public severityData: Array<SeverityModel>;
@@ -20,14 +19,11 @@ export class BugsDashboardComponent implements OnInit {
   public columnDefs = [{ field: "Severity" }, { field: "PRBID", cellRenderer:(params)=>`<a href='https://www.google.com' target='_blank'>PRB1X2564</a>`}, { field: "Description" }];
   public type= "bar";
 
-  constructor(private httpService: HttpService, private bugsMapperService: BugsMapperService,
-    private bugsGenericService: BugsGenericService) { }
+  constructor(private httpService: HttpService, private bugsMapperService: BugsMapperService, private bugsGenericService: BugsGenericService) { }
 
   ngOnInit(): void {
-    this.httpService.getMethod('assets/json/prb.json').subscribe((data) => {
-      console.log('data', data);
-      this.severityData = this.bugsMapperService.severityMapper(data);
-      console.log(this.severityData);
+      this.httpService.getMethod('assets/json/prb.json').subscribe((data) => {      
+      this.severityData = this.bugsMapperService.severityMapper(data);      
       this.rowData = this.severityData;
       const severityList = this.bugsGenericService.getSeverityList(this.severityData);
       var tempData = {...this.data};
@@ -35,5 +31,4 @@ export class BugsDashboardComponent implements OnInit {
       this.data = tempData;
     });
   }
-
 }

@@ -13,7 +13,7 @@ import { BugsMapperService } from '../../services/bugs-mapper.service';
 export class BugsTechnologyComponent implements OnInit {
   public data = pieChartsData;
   public options = pieChartOPtion;
-  public type= "pie";
+  public type= 'pie';
   public severityData: Array<SeverityModel>;  
   
   constructor(private httpService: HttpService, private bugsMapperService: BugsMapperService,

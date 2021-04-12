@@ -9,7 +9,7 @@ const routes: Routes = [
     path: "",
     component: BugsMenuComponent,
     children: [ 
-              {path: '', component: BugsDashboardComponent},
+                {path: '', component: BugsDashboardComponent},
                 {path: 'bugsdashboard', component: BugsDashboardComponent}, 
                 {path: "bugstechnology", component: BugsTechnologyComponent}
               ]
