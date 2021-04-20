@@ -21,4 +21,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class BugsRoutingModule { };
-export const BugsRoutingComponents = [BugsMenuComponent, BugsDashboardComponent, BugsTechnologyComponent];
+
