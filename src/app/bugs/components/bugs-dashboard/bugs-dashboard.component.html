@@ -1,6 +1,6 @@
 <br>
 <div class="container">
-    <app-charts class="box-details" [chartType]="type" [chartOptions]="options" [chartData]="data"></app-charts>
+    <app-charts class="box-details" [chartType]="['bar']"[chartOptions]="options" [chartData]="data"></app-charts>
     <div class="box-details">
         <h3>Details</h3>
         <app-table [rows]="rowData" [cols]="columnDefs"></app-table>

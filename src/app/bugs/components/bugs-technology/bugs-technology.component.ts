@@ -12,17 +12,14 @@ import { BugsMapperService } from '../../services/bugs-mapper.service';
 })
 export class BugsTechnologyComponent implements OnInit {
   public data = pieChartsData;
-  public options = pieChartOPtion;
-  public type= 'pie';
-  public severityData: Array<SeverityModel>;  
+  public options = pieChartOPtion; 
   
-  constructor(private httpService: HttpService, private bugsMapperService: BugsMapperService,
-    private bugsGenericService: BugsGenericService) { }
+  constructor(private httpService: HttpService, private bugsMapperService: BugsMapperService, private bugsGenericService: BugsGenericService) { }
 
   ngOnInit(): void {
     this.httpService.getMethod('assets/json/prb.json').subscribe((data) => {      
-      this.severityData = this.bugsMapperService.severityMapper(data); 
-      this.data =  this.bugsGenericService.getTechnologyList(this.severityData);     
+      const severityData:Array<SeverityModel> = this.bugsMapperService.severityMapper(data); 
+      this.data =  this.bugsGenericService.getTechnologyList(severityData);     
     });
   }
 
