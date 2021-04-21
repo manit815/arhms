@@ -1,0 +1,31 @@
+.container{
+    display: flex;  
+    align-items: stretch;
+}
+
+.box{
+    font-size: 15px;
+    padding: 18px;
+    flex-grow: 4;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: olive;
+}
+
+.box-details {
+    font-size: 15px;
+    padding: 15px;
+    color: white;
+    font-weight: 400;
+    text-align: center;    
+    flex-grow: 0 0 50%;
+    width: 50%;
+    color: black;
+    margin-left: 22%;
+}
+

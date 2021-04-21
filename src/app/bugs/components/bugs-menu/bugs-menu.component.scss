@@ -1,5 +1,5 @@
 .container{
-    display: flex;    
+    display: flex;   
     align-items: stretch;
     margin-top: 15px;
 }
@@ -7,11 +7,12 @@
 .box{
     font-size: 15px;
     padding: 18px;
-    flex-grow: 4;
+    flex-grow:  4;
     color: white;
     font-weight: 400;
     text-align: center;
-    cursor: pointer;
+    cursor:  pointer;
+    text-decoration: none;
 }
 
 .box:hover {
@@ -23,13 +24,13 @@
     padding: 15px;
     color: white;
     font-weight: 400;
-    text-align: center;  
-    flex-grow: 0 0 50%;
+    text-align: center; 
+    flex-grow:0 0 50%;
     width: 50%;
     color: black;
 }
 
-.box1{background:mediumseagreen;}
-.box2{background:darkcyan;}
-.box3{background:steelblue;}
-.box4{background:darkkhaki;}
+.box1{ background: mediumseagreen; }
+.box2{ background: darkcyan; }
+.box3{ background: steelblue; }
+.box4{ background: darkkhaki; }

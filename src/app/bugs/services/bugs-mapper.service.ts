@@ -11,9 +11,9 @@ export class BugsMapperService {
     console.log(response.tfs_item.items);
     let severityModelArray: Array<SeverityModel> = [];
     response.tfs_item.items.forEach((data) => {
-      const severityModelObject = new SeverityModel(data.severity, data.status, true, data.created_date, 'PRB1X2564', '65007', data.Description, data.url);
+      const severityModelObject = new SeverityModel(data.severity, data.status, true, data.created_date, 'PRB1X2564', '65007', data.Description, data.chapter, data.url);      
       severityModelArray.push(severityModelObject)
-    })
+    });
     return severityModelArray;
   }
 }

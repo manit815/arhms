@@ -8,6 +8,8 @@ export class ChartsComponent implements OnInit {
   data: any;
     
   options: any;
+  
+  type: String;
   @Input() set chartData(data: any) {
     this.data = data;
   }
@@ -15,6 +17,11 @@ export class ChartsComponent implements OnInit {
   @Input() set chartOptions(options: any) {
     this.options = options;
   }
+  
+  @Input() set chartType(type: String) {
+    this.type = type;
+  }
+
   constructor() {
 
   }

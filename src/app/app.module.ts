@@ -24,7 +24,7 @@ import { CommonsModule } from './commons/commons.module';
     DashboardComponent,
     GridComponent,
     EngineeringComponent,
-    BugsComponent,
+    //BugsComponent,
     TribesComponent,
     QualityComponent,
   ],
