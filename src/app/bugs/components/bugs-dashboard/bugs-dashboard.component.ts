@@ -1,5 +1,4 @@
 import { Component, OnInit,  } from '@angular/core';
-import { BugsRoutingModule } from '../../bugs-routing.module';
 import { chartsData, chartsOption } from 'src/app/commons/constants/charts.constant';
 import { HttpService } from 'src/app/commons/services/http.service';
 import { SeverityModel } from '../../models/classes/severity.models.class';
@@ -16,8 +15,11 @@ export class BugsDashboardComponent implements OnInit {
   public options = chartsOption;
   public severityData: Array<SeverityModel>;
   public rowData: Array<any>;
-  public columnDefs = [{ field: "Severity" }, { field: "PRBID", cellRenderer:(params)=>`<a href='https://www.google.com' target='_blank'>PRB1X2564</a>`}, { field: "Description" }];
- 
+  public columnDefs = [
+    { field: "Severity" }, 
+    { field: "PRBID", cellRenderer: (params:any) => `<a href=`+params.data.URL+` target='_blank'>`+params.data.PRBID+`</a>` }, 
+    { field: "Description" }
+  ];
   constructor(private httpService: HttpService, private bugsMapperService: BugsMapperService, private bugsGenericService: BugsGenericService) { }
 
   ngOnInit(): void {

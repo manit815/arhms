@@ -12,7 +12,8 @@
                 "log_url": [""],
                 "type": "bug",
                 "status": "approved",
-                "blocked": true
+                "blocked": true,
+                "url":"https://www.google.com"
             },{
                 "severity": 2,
                 "created_date": "xxxxxx",
@@ -24,7 +25,8 @@
                 "log_url": [""],
                 "type": "bug",
                 "status": "approved",
-                "blocked": true
+                "blocked": true,
+                "url":"https://www.yahoo.com"
             },{
                 "severity": 3,
                 "created_date": "xxxxxx",
@@ -36,7 +38,8 @@
                 "log_url": [""],
                 "type": "bug",
                 "status": "approved",
-                "blocked": true
+                "blocked": true,
+                "url":"https://www.gmail.com"
             },{
                 "severity": 1,
                 "created_date": "xxxxxx",
@@ -48,7 +51,8 @@
                 "log_url": [""],
                 "type": "bug",
                 "status": "approved",
-                "blocked": true
+                "blocked": true,
+                "url":"https://www.google.com"
             },{
                 "severity": 1,
                 "created_date": "xxxxxx",
@@ -60,7 +64,8 @@
                 "log_url": [""],
                 "type": "bug",
                 "status": "approved",
-                "blocked": true
+                "blocked": true,
+                "url":"https://www.yahoo.com"
             },{
                 "severity": 1,
                 "created_date": "xxxxxx",
@@ -72,7 +77,8 @@
                 "log_url": [""],
                 "type": "bug",
                 "status": "approved",
-                "blocked": true
+                "blocked": true,
+                "url":"https://www.yahoo.com"
             },{
                 "severity": 1,
                 "created_date": "xxxxxx",
@@ -84,7 +90,8 @@
                 "log_url": [""],
                 "type": "bug",
                 "status": "approved",
-                "blocked": true
+                "blocked": true,
+                "url":"https://www.google.com"
             }
         ]
     }

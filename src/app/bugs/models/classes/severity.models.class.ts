@@ -1,14 +1,15 @@
 export class SeverityModel {
-    private Severity;
-    private Status;
-    private OnTrack;
-    private CreatedDate;
-    private PRBID;
-    private StoryID;
-    private Description;
-    private Chapter;
+    private Severity:any;
+    private Status:any;
+    private OnTrack:any;
+    private CreatedDate:any;
+    private PRBID:any;
+    private StoryID:any;
+    private Description:any;
+    private Chapter:any;
+    private URL:any;   
 
-    constructor(severity, status, onTrack, createdDate, prbID, storyID, description, chapter) {
+    constructor(severity:any, status:any, onTrack:any, createdDate:any, prbID:any, storyID:any, description:any, chapter:any, url:any) {
         this.Severity = severity;
         this.Status = status;
         this.OnTrack = onTrack;
@@ -17,5 +18,6 @@ export class SeverityModel {
         this.StoryID = storyID;
         this.Description = description;
         this.Chapter = chapter;
+        this.URL = url;
     }
 }
